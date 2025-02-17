@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конфигуратор ПК</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="base-menu"></div>
+    <div class="nav-menu" id="menu">
+        <a href="https://t.me/rin0n0"><div class="menu-item">
+            <img src="tg.png" alt="">
+            <span>Telegram</span>
+        </div></a>
+        <a href="https://www.avito.ru/brands/be268e2157ee90306eaecccdf33e33f4?src=sharing"><div class="menu-item">
+            <img src="avito.png" alt="">
+            <span>Avito</span>
+        </div></a>
+        <a href="https://vk.com/artemiyles"><div class="menu-item">
+            <img src="vk.png" alt="">
+            <span>VK</span>
+        </div></a>
+    </div>
+
+    <div class="menu" id="navMenu">
+        <div class="nav-item">
+            <a href="videos.html">Мои видео</a>
+        </div>
+        <div class="nav-item">
+            <a href="otzivi.html">Отзывы</a>
+        </div>
+        <div class="nav-item">
+            <a href="table.html">FAQ</a>
+        </div>
+    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="base-header">
+        <span>FAQ</span>
+    </div>
+    <br><br><br>
+    <div class="faq">
+        <h2>1. Как заказать сборку компьютера?</h2>
+        <p>Для оформления заказа вам нужно: оставить заявку через форму на сайте или связаться с нами по телефону/мессенджеру. Указать свои потребности: для каких задач нужен ПК (игры, работа, видеомонтаж и т.д.). Согласовать конфигурацию и бюджет с нашим специалистом.</p>
+    </div>
+
+    <div class="faq">
+        <h2>2. Могу ли я предоставить свои комплектующие для сборки?</h2>
+        <p>Да, мы можем собрать компьютер из ваших комплектующих. Однако перед сборкой проверим их совместимость и работоспособность.</p>
+    </div>
+
+    <div class="faq">
+        <h2>3. Сколько стоит услуга сборки ПК?</h2>
+        <p>Стоимость сборки зависит от сложности работы: Базовая сборка — от 20000. Премиальная сборка (с кабель-менеджментом, тестированием и установкой системы) — от 50000.</p>
+    </div>
+
+    <div class="faq">
+        <h2>4. Предоставляете ли вы гарантию?</h2>
+        <p>Да, мы даем гарантию на сборку сроком 6 месяцев. На комплектующие действует гарантия от производителя.</p>
+    </div>
+
+    <div class="faq">
+        <h2>5. Могу ли я выбрать определенные бренды комплектующих?</h2>
+        <p>Конечно! Мы подберем компоненты, соответствующие вашим предпочтениям (например, конкретный бренд процессора или видеокарты).</p>
+    </div>
+
+    <div class="faq">
+        <h2>6. Сколько времени занимает сборка ПК?</h2>
+        <p>Обычно сборка занимает от 1 до 3 дней, в зависимости от наличия комплектующих и сложности конфигурации.</p>
+    </div>
+
+    <div class="faq">
+        <h2>7. Устанавливаете ли вы операционную систему?</h2>
+        <p>Да, по вашему желанию мы можем установить и настроить операционную систему, драйверы и необходимое ПО.</p>
+    </div>
+
+    <div class="faq">
+        <h2>8. Что делать, если после сборки возникнут проблемы?</h2>
+        <p>Если вы столкнулись с неполадками, свяжитесь с нами. Мы проведем диагностику и устраним неисправность в рамках гарантийных обязательств.</p>
+    </div>
+
+    <div class="faq">
+        <h2>9. Какие формы оплаты вы принимаете?</h2>
+        <p>Мы принимаем оплату наличными, банковскими картами, а также онлайн-переводы.</p>
+    </div>
+
+    <div class="faq">
+        <h2>10. Можно ли получить консультацию перед заказом?</h2>
+        <p>Да, мы бесплатно проконсультируем вас по подбору комплектующих, расскажем о возможностях сборки и ответим на все вопросы.</p>
+    </div>
+
+    <div class="faq">
+        <h2>11. Выполняете ли вы сборку игровых ПК?</h2>
+        <p>Да, мы специализируемся на сборке игровых ПК, оптимизированных под самые современные игры с высоким FPS и минимальными задержками.</p>
+    </div>
+
+    <div class="faq">
+        <h2>12. Доставляете ли вы готовые компьютеры?</h2>
+        <p>Да, мы предлагаем доставку по всей России. Также возможен самовывоз из нашего офиса.</p>
+    </div>
+
+    <div class="footer">
+        <button onclick="window.location.href='index.html'">На главную</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

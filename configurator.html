@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конфигуратор ПК</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="base-menu"></div>
+    <div class="menu" id="menu">
+        <a href="https://t.me/rin0n0"><div class="menu-item">
+            <img src="tg.png" alt="">
+            <span>Telegram</span>
+        </div></a>
+        <a href="https://www.avito.ru/brands/be268e2157ee90306eaecccdf33e33f4?src=sharing"><div class="menu-item">
+            <img src="avito.png" alt="">
+            <span>Avito</span>
+        </div></a>
+        <a href="https://vk.com/artemiyles"><div class="menu-item">
+            <img src="vk.png" alt="">
+            <span>VK</span>
+        </div></a>
+    </div>
+
+    <div class="nav-menu" id="navMenu">
+        <div class="nav-item">
+            <a href="videos.html">Мои видео</a>
+        </div>
+        <div class="nav-item">
+            <a href="otzivi.html">Отзывы</a>
+        </div>
+        <div class="nav-item">
+            <a href="table.html">FAQ</a>
+        </div>
+    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="base-header">
+        <span>Конфигуратор ПК</span>
+    </div>
+
+    <div class="configurator">
+        <form id="pcForm">
+            <div class="form-item">
+                <label for="tasks">Для чего нужен ПК?</label>
+                <textarea class="form-form" id="tasks" name="tasks" rows="5" placeholder="Опишите задачи: игры, работа, монтаж видео..."></textarea>
+            </div>
+
+            <div class="form-item">
+                <label for="budget">Выберите бюджет:</label>
+                <select class="form-form" id="budget" name="budget">
+                    <option value="low">До 30 000 руб.</option>
+                    <option value="medium">30 000 - 50 000 руб.</option>
+                    <option value="medium">50 000 - 80 000 руб.</option>
+                    <option value="medium">80 000 - 120 000 руб.</option>
+                    <option value="high">Более 120 000 руб.</option>
+                </select>
+            </div>
+
+            <button type="button" class="form-button" onclick="showComponents()">Выбрать комплектующие (по желанию)</button>
+            <div class="components hidden" id="components">
+                <h3>Выберите комплектующие:</h3>
+                <div class="component-item">
+                    <label for="cpu">Процессор:</label>
+                    <select id="cpu" name="cpu">
+                        <option value="intel-pentium">Intel pentium/celeron</option>
+                        <option value="intel-i3">Intel i3</option>
+                        <option value="intel-i5">Intel i5</option>
+                        <option value="intel-i7">Intel i7</option>
+                        <option value="intel-i9">Intel i9</option>
+                        <option value="ryzen-5">AMD Ryzen 5</option>
+                        <option value="ryzen-7">AMD Ryzen 7</option>
+                        <option value="ryzen-9">AMD Ryzen 9</option>
+                    </select>
+                </div>
+                <div class="component-item">
+                    <label for="gpu">Видеокарта:</label>
+                    <select id="gpu" name="gpu">
+                        <option value="gtx-1650">GTX 1650</option>
+                        <option value="rtx-3060">RTX 3060</option>
+                        <option value="rtx-4070">RTX 4070</option>
+                        <option value="no-gpu">Без видеокарты</option>
+                    </select>
+                </div>
+                <div class="component-item">
+                    <label for="ram">Оперативная память:</label>
+                    <select id="ram" name="ram">
+                        <option value="8gb">8 ГБ</option>
+                        <option value="16gb">16 ГБ</option>
+                        <option value="32gb">32 ГБ</option>
+                        <option value="64gb">64 ГБ</option>
+                        <option value="64+gb">Более 64 ГБ</option>
+                    </select>
+                </div>
+            </div>
+
+            <br>
+            <button type="submit" class="form-button">Отправить заявку</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <button onclick="window.location.href='index.html'">На главную</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
